@@ -114,12 +114,12 @@ float multiplicar(float A, float B)
 
 /** \brief La funcion recibe un numero, verifica si es posible sacar el factorial, en caso de que lo sea realiza la operacion y devuelve el resultado
  *
- * \param factorialDecimal int* Indica con 1 si el numero tenia decimales y por ende no fue posible sacar el factorial, o con 0 si fue posible
+ * \param factorialError int* Indica con 1 si el numero tenia decimales y por ende no fue posible sacar el factorial, o con 0 si fue posible
  * \param A float El numero del cual sacaremos el factorial
  * \return long int Se regresa como resultado el factorial del numero
  *
  */
-long int factorial(int* factorialDecimal, float A)
+long int factorial(int* factorialError, float A)
 {
     long int auxiliar;
     int fact;
@@ -127,23 +127,30 @@ long int factorial(int* factorialDecimal, float A)
     auxiliar = (int)A;
     fact = (int)A-1;
     decimal = A - auxiliar;
-    if(decimal == 0)
+    if(auxiliar >= 0)
     {
-        *factorialDecimal = 0;
-        while(fact>0)
+        if(decimal == 0)
         {
-            auxiliar = auxiliar * fact;
-            fact--;
+            *factorialError = 0;
+            while(fact>0)
+            {
+                auxiliar = auxiliar * fact;
+                fact--;
+            }
+            if (auxiliar == 0)
+            {
+                auxiliar = 1;
+            }
+
         }
-        if (auxiliar == 0)
+        else
         {
-            auxiliar = 1;
+            printf("No se puede sacar el factorial de un numero con decimales\n");
+            *factorialError = 1;
         }
-    }
-    else
-    {
-        printf("No se puede sacar el factorial de un numero con coma\n");
-        *factorialDecimal = 1;
+    }else{
+        printf("No se puede sacar el factorial de un numero negativo\n");
+        *factorialError = 1;
     }
     return auxiliar;
 }

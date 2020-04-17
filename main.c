@@ -14,8 +14,8 @@ int main()
     float multiplicacion;
     long int factorialA = 1;
     long int factorialB = 1;
-    int factorialDecimalA = 0;
-    int factorialDecimalB = 0;
+    int factorialErrorA = 0;
+    int factorialErrorB = 0;
 
 
     do
@@ -43,8 +43,8 @@ int main()
             resta = restar(num1, num2);
             division = dividir(&divisionCero,num1,num2);
             multiplicacion = multiplicar(num1,num2);
-            factorialA = factorial(&factorialDecimalA,num1);
-            factorialB = factorial(&factorialDecimalB,num2);
+            factorialA = factorial(&factorialErrorA,num1);
+            factorialB = factorial(&factorialErrorB,num2);
             printf("Calculos realizados... \n");
             break;
         case 4:
@@ -59,7 +59,7 @@ int main()
                 printf("No se pudo realizar la division\n");
             }
             printf("El resultado de A*B es: %f\n", multiplicacion);
-            if(factorialDecimalA == 0)
+            if(factorialErrorA == 0)
             {
                 printf("El factorial de A es: %ld\n", factorialA);
             }
@@ -67,7 +67,7 @@ int main()
             {
                 printf("No se pudo sacar el factorial de A\n");
             }
-            if(factorialDecimalB == 0)
+            if(factorialErrorB == 0)
             {
                 printf("El factorial de B es: %ld\n", factorialB);
             }
