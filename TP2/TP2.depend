@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1589676098 source:e:\proyectos c\tp2\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1589672968 e:\proyectos c\tp2\arrayemployees.h
+
+1589585871 source:e:\proyectos c\tp2\funcionesvalidacion.c
+	"FuncionesValidacion.h"
+	<stdio.h>
+	<stdlib.h>
+
+1589587760 e:\proyectos c\tp2\funcionesvalidacion.h
+
+1589674906 source:e:\proyectos c\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+
