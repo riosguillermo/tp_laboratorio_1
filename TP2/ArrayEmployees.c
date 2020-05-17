@@ -507,3 +507,23 @@ int editEmployees(Employee list[], int len)
 
     return 0;
 }
+
+/** \brief La funcion buscara entre los empleados hasta encontrar alguno que tenga el flag isEmpty en 0
+ *
+ * \param empleados[] Employee - La lista de empleados donde se buscara
+ * \param len int - El tamaño maximo de la lista
+ * \return int - La funcino retornara 1 si encontro almenos 1 empleado con isEmpty en 0, o 0 si no encontro ninguno
+ *
+ */
+int verificarEmpleados(Employee empleados[], int len)
+{
+int i;
+    for(i=0;i<len;i++)
+    {
+        if(empleados[i].isEmpty == 0)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}

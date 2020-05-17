@@ -19,3 +19,16 @@
 	<stdlib.h>
 	"ArrayEmployees.h"
 
+1589677274 source:c:\users\rios\desktop\tp_laboratorio_1\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+
+1589677071 c:\users\rios\desktop\tp_laboratorio_1\tp2\arrayemployees.h
+
+1589677139 source:c:\users\rios\desktop\tp_laboratorio_1\tp2\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

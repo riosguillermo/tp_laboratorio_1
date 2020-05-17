@@ -24,4 +24,5 @@ int esSoloLetras(char cadena[], int maximo);
 float getFloat(char mensaje[]);
 int printEmployees(Employee list[], int length);
 int editEmployees(Employee list[], int len);
+int verificarEmpleados(Employee empleados[], int len);
 #endif // ARRAYEMPLOYEES_H_INCLUDED
